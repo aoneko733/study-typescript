@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title></title>
-<meta name="description" content="">
+<meta name="description" content="page01です">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="format-detection" content="telephone=no,email=no,address=no">
@@ -50,8 +50,10 @@
 <!-- END Header Area -->
 
 <!-- START Main Area -->
-<main>
-
+<main id="page02">
+  <div class="kv">
+    <img class="kv-img">
+  </div>
 </main>
 <!-- END Main Area -->
 
@@ -62,6 +64,13 @@
 
 <!-- Import JS -->
 <!-- <script src="/common/js/function.js"></script> -->
-
+<script>
+  const kvId = document.querySelector('main').id;
+  const kvImg = document.querySelector('.kv-img');
+  const imgUrl = "img/kv-" + kvId + ".png";
+  kvImg.src = imgUrl;
+  const altMsg = document.querySelector('meta[name="description"]').content;
+  kvImg.alt = altMsg;
+</script>
 </body>
 </html>
