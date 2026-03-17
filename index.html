@@ -43,6 +43,11 @@
 <!-- Import JS/jQuery Library -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
+<style>
+  .kv {
+    text-align: center;
+  }
+</style>
 <body>
 
 <!-- START Header Area -->
@@ -50,7 +55,7 @@
 <!-- END Header Area -->
 
 <!-- START Main Area -->
-<main id="page02">
+<main id="page01">
   <div class="kv">
     <img class="kv-img">
   </div>
@@ -64,12 +69,14 @@
 
 <!-- Import JS -->
 <!-- <script src="/common/js/function.js"></script> -->
+ <script src="./dest/test01.js"></script>
 <script>
   const kvId = document.querySelector('main').id;
   const kvImg = document.querySelector('.kv-img');
   const imgUrl = "img/kv-" + kvId + ".png";
   kvImg.src = imgUrl;
-  const altMsg = document.querySelector('meta[name="description"]').content;
+  // const altMsg = document.querySelector('meta[name="description"]').content;
+  const altMsg = kvId + "のキービジュアル";
   kvImg.alt = altMsg;
 </script>
 </body>
