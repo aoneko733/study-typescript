@@ -1,3 +1,3 @@
 
 let firstName: string = "Ryuta";
-let age: number = 18;
+let age: number = 20;
